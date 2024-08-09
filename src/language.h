@@ -1967,24 +1967,24 @@ static const char* const myLanguage[18][281] PROGMEM = {
     "Anfänglich", // 260
     "Immer", // 261
     "Uhr anzeigen", // 262
-    "Show long PS", // 263
-    "Start frequency", // 264
-    "Stop frequency", // 265
-    "Start memory channel", // 266
-    "Stop memory channel", // 267
-    "Only store with RDS", // 268
-    "Start auto memory", // 269
-    "Auto memory", // 270
+    "Langen PS anzeigen", // 263
+    "Start-Frequenz", // 264
+    "Stopp-Frequenz", // 265
+    "Start-Speicherplatz", // 266
+    "Stopp-Speicherplatz", // 267
+    "Speichern nur mit RDS", // 268
+    "Starte Auto-Speichern", // 269
+    "Auto-Speichern", // 270
     "Stationlist ID", // 271
-    "Found", // 272
-    "Abort! Out of memorychannels", // 273
-    "Abort! User pressed button", // 274
-    "Scan finished without errors", // 275
-    "Clear memory channels", // 276
-    "cleared", // 277
-    "Prevent double PI", // 278
-    "Range", // 279
-    "Full" // 280
+    "Gefunden", // 272
+    "Abbruch! Zu wenig Speicherplatz", // 273
+    "Abbruch! Anwendereingriff", // 274
+    "Scan ohne Fehler beendet", // 275
+    "Lösche Speicherplätze", // 276
+    "Gelöscht", // 277
+    "Vermeide doppelte PI", // 278
+    "Bereich", // 279
+    "Voll" // 280
   },
 
   { "Český", // Czech
