@@ -274,7 +274,7 @@ boolean WiFiConnect::startConfigurationPortal(int8_t cancelPin) {
   server->on("/wifisave", std::bind(&WiFiConnect::handleWifiSave, this));
   server->on("/logo.png", std::bind(&WiFiConnect::handleLogo, this));
 
-  /* Captive portal detection endpoints — redirect to root to trigger popup */
+  /* Captive portal detection endpoints - redirect to root to trigger popup */
   server->on("/fwlink",              std::bind(&WiFiConnect::handleRoot, this));  // Windows
   server->on("/redirect",            std::bind(&WiFiConnect::handleRoot, this));  // Windows 10+
   server->on("/hotspot-detect.html", std::bind(&WiFiConnect::handleRoot, this));  // Apple iOS/macOS
@@ -531,7 +531,7 @@ void WiFiConnect::handleWifiSave() {
   page += _ssid;
   page += F("</strong> ...</p></div>");
 
-  // Polling script: polls /foo every 3s; if AP responds → fail, if 20 timeouts → success
+  // Polling script: polls /foo every 3s; if AP responds -> fail, if 20 timeouts -> success
   page += F("<script>"
     "var a=0,t=setInterval(function(){"
     "if(a>20){clearInterval(t);document.getElementById('sp').style.display='none';"

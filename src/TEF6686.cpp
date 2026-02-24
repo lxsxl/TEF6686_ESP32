@@ -462,8 +462,8 @@ void TEF6686::readRDS(byte showrdserrors) {
           if (stationID > 4096) {
 
             // RBDS alternative PI decoding (Annex D)
-            // Method A: Transmitted 0xANXY → Standard 0xN0XY (2nd hex digit was 0)
-            // Method B: Transmitted 0xAFNM → Standard 0xNM00 (4th hex digit was 0)
+            // Method A: Transmitted 0xANXY -> Standard 0xN0XY (2nd hex digit was 0)
+            // Method B: Transmitted 0xAFNM -> Standard 0xNM00 (4th hex digit was 0)
             if ((stationID & 0xF000U) == 0xA000 && (stationID & 0x0F00U) != 0) {
               if ((stationID & 0xFF00U) == 0xAF00) {
                 stationID = (uint16_t)(stationID & 0x00FF) << 8;

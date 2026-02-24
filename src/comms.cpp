@@ -1062,7 +1062,7 @@ void wifiPoll() {
         WiFi.begin();
         _wifiConnMs = millis();
       } else {
-        // All retries exhausted — wait before trying again
+        // All retries exhausted - wait before trying again
         _wifiConnState = 0;
         _wifiConnMs = millis();  // start reconnect cooldown
       }
@@ -1070,13 +1070,13 @@ void wifiPoll() {
     return;
   }
 
-  // ---- State 0: idle — monitor connection ----
+  // ---- State 0: idle - monitor connection ----
   if (WiFi.status() == WL_CONNECTED) {
     if (!_wifiServicesUp) wifiStartServices();
     return;
   }
 
-  // Connection lost or never established — try to reconnect
+  // Connection lost or never established - try to reconnect
   if (_wifiServicesUp) wifiStopServices();
 
   if (millis() - _wifiConnMs >= WIFI_RECONNECT_MS) {

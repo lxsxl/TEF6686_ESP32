@@ -1,4 +1,4 @@
-// Auto-generated from data/*.csv — do not edit manually
+// Auto-generated from data/*.csv - do not edit manually
 #include "usa_stations.h"
 #include <pgmspace.h>
 
