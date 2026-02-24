@@ -4,6 +4,7 @@
 #include <EEPROM.h>
 #include <Wire.h>
 #include <math.h>
+#include <ESP32Time.h>              // https://github.com/fbiego/ESP32Time
 #include <TimeLib.h>                // https://github.com/PaulStoffregen/Time
 #include <TFT_eSPI.h>               // https://github.com/PE5PVB/TFT_eSPI_DynamicSpeed
 #include <Hash.h>                   // https://github.com/bbx10/Hash_tng/archive/refs/heads/master.zip

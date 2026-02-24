@@ -20,6 +20,8 @@
 
 #include <Arduino.h>
 #include <WiFi.h>
+#include <FS.h>
+using fs::FS;              // ESP32 core 3.x: WebServer.h needs FS in global scope
 #include <WebServer.h>
 #include <DNSServer.h>
 #include <esp_wifi.h>
